@@ -87,9 +87,9 @@ const withClapAnimation = WrappedComponent => {
       const newAnimationTimeline = this.animationTimeline.add([
         countAnimation,
         countTotalAnimation,
-        scaleButton,
         circleBurst,
-        triangleBurst
+        triangleBurst,
+        scaleButton,
       ])
       this.setState({ animationTimeline: newAnimationTimeline })
     }
